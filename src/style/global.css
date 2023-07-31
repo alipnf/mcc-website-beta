@@ -4,7 +4,6 @@
 
 @layer base {
   body {
-    @apply scroll-smooth
     font-family: "Inter", sans-serif;
   }
 }
