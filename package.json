@@ -4,6 +4,7 @@
   "description": "website sederhana, masih tahap pengembangan",
   "main": "index.js",
   "scripts": {
+    "dev": "npx tailwindcss ./src/style/global.css -o ./dist/output.css --watch",
     "build": "npx tailwindcss build ./src/style/global.css -o ./dist/output.css"
   },
   "keywords": [],
