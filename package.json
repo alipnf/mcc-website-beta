@@ -1,0 +1,20 @@
+{
+  "name": "mcc-website",
+  "version": "1.0.0",
+  "description": "website sederhana, masih tahap pengembangan",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss build ./src/style/global.css -o ./dist/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "tailwind-hamburgers": "^1.3.5"
+  }
+}
