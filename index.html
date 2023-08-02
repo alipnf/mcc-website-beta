@@ -23,12 +23,12 @@
   </head>
   <body>
     <header
-      class="bg-center bg-no-repeat bg-cover xl:pt-9 2xl:pt-44 h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[650px] 2xl:h-[910px]"
+      class="flex relative justify-center bg-center bg-no-repeat bg-cover h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[650px] 2xl:h-[910px]"
       style="background-image: url('./public/bg-header.png')"
     >
-      <div class="container mx-auto">
-        <div class="flex justify-center mt-[130px]">
-          <img src="./public/Logo.svg" alt="logo" />
+      <div class="container absolute top-6 flex-col">
+        <div class="flex justify-center">
+          <img src="./public/Logo.svg" alt="logo" class="mt-8" />
         </div>
 
         <div class="mt-5 text-center">
@@ -36,7 +36,7 @@
             We Rise. We Change
           </h1>
           <p
-            class="hidden mt-12 w-9/12 text-2xl font-normal text-black sm:inline-block lg:w-10/12 xl:w-7/12"
+            class="hidden mt-12 w-9/12 text-2xl font-normal text-black sm:inline-block lg:w-10/12 xl:w-9/12"
           >
             MCC atau Muria Computer Club merupakan UKM di Universitas Muria
             Kudus. UKM yang berbasis keilmuan dan memiliki visi menjadi
@@ -59,7 +59,7 @@
     </header>
 
     <section
-      class="bg-center bg-no-repeat bg-cover w-[200ox] full mt-[164px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[750px] xl:h-[800px] 2xl:h-[1000px]"
+      class="bg-center bg-no-repeat bg-cover full mt-[164px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[750px] xl:h-[800px] 2xl:h-[1000px]"
       style="background-image: url('./public/bg-section.png')"
     >
       <div class="container flex flex-col mx-auto text-center pt-[77px]">
@@ -80,5 +80,78 @@
         </p>
       </div>
     </section>
+
+    <section class="container mx-auto">
+      <div class="flex flex-col mx-auto text-center pt-[77px]">
+        <p class="text-xl font-semibold text-emerald-400 lg:text-2xl">Devisi</p>
+        <h1 class="mt-2 text-2xl font-semibold text-black lg:text-4xl">
+          MCC Memiliki 4 Divisi Kepengurusan
+        </h1>
+      </div>
+      <div class="grid gap-5 mt-8">
+        <div
+          class="flex flex-col justify-center items-center mx-6 text-center bg-violet-100 cursor-pointer rounded-[10px]"
+          id="btnProgram"
+        >
+          <p
+            class="py-2 w-full text-xl font-semibold text-black bg-violet-100 full drop-shadow-lg rounded-[10px]"
+          >
+            Program
+          </p>
+          <p class="hidden p-2" id="program">
+            Divisi bertanggung jawab merancang, mengelola, dan mengkoordinasikan
+            kegiatan dan projek untuk mencapai sasaran strategis dan kesuksesan
+            MCC secara menyeluruh.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center mx-6 text-center bg-violet-100 cursor-pointer rounded-[10px]"
+          id="btnCreative"
+        >
+          <p
+            class="py-2 w-full text-xl font-semibold text-black bg-violet-100 full drop-shadow-lg rounded-[10px]"
+          >
+            Creative
+          </p>
+          <p class="hidden p-2" id="creative">
+            Divisi yang bertujuan untuk menciptakan ide inovatif, konten
+            artistik, dan solusi kreatif untuk pemasaran dan komunikasi MCC.
+          </p>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center mx-6 text-center bg-violet-100 cursor-pointer rounded-[10px]"
+          id="btnPr"
+        >
+          <p
+            class="py-2 w-full text-xl font-semibold text-black bg-violet-100 full drop-shadow-lg rounded-[10px]"
+          >
+            Public Relation
+          </p>
+          <p class="hidden p-2" id="pr">
+            Divisi yang bertujuan membangun dan memenjaga hubungan positif
+            dengan masyarakat, media, dan pemangku kepentingan dengan tujuan
+            untuk meningkatkan citra serta pemahaman tentang visi dan nilai MCC.
+          </p>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center mx-6 text-center bg-violet-100 cursor-pointer rounded-[10px]"
+          id="btnHr"
+        >
+          <p
+            class="py-2 w-full text-xl font-semibold text-black bg-violet-100 full drop-shadow-lg rounded-[10px]"
+          >
+            Human Resource
+          </p>
+          <p class="hidden p-2" id="hr">
+            Divisi yang bertanggung jawab mengelola sumber daya manusia,
+            termasuk perekrutan, pengembangan karyawan, administrasi
+            kepegawaian, kebijakan karyawan, dan menciptakan lingkungan kerja
+            yang produktif dan berdaya saing.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="./public/script/main.js"></script>
   </body>
 </html>
