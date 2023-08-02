@@ -81,14 +81,14 @@
       </div>
     </section>
 
-    <section class="container mx-auto">
+    <section class="container mx-auto sm:-mt-[25%]">
       <div class="flex flex-col mx-auto text-center pt-[77px]">
         <p class="text-xl font-semibold text-emerald-400 lg:text-2xl">Devisi</p>
         <h1 class="mt-2 text-2xl font-semibold text-black lg:text-4xl">
           MCC Memiliki 4 Divisi Kepengurusan
         </h1>
       </div>
-      <div class="grid gap-5 mt-8">
+      <div class="grid gap-5 mt-8 md:hidden">
         <div
           class="flex flex-col justify-center items-center mx-6 text-center bg-violet-100 cursor-pointer rounded-[10px]"
           id="btnProgram"
@@ -151,7 +151,60 @@
           </p>
         </div>
       </div>
+
+      <div
+        class="hidden grid-cols-1 gap-5 mx-24 mt-8 cursor-pointer md:grid lg:grid-cols-2"
+      >
+        <div
+          class="flex justify-center items-center bg-violet-100 rounded-[11px]"
+          onmouseover="changeText('textProgram', 'Divisi bertanggung jawab merancang, mengelola, dan mengkoordinasikan kegiatan dan projek untuk mencapai sasaran strategis dan kesuksesan MCC secara menyeluruh.', '14px', 'normal')"
+          onmouseout="resetText('textProgram', 'Program', '1.5rem', '600')"
+        >
+          <p
+            id="textProgram"
+            class="py-8 px-5 text-2xl font-semibold text-center text-black"
+          >
+            Program
+          </p>
+        </div>
+        <div
+          class="flex justify-center items-center bg-violet-100 rounded-[11px]"
+          onmouseover="changeText('textCreative', 'Divisi yang bertujuan untuk menciptakan ide inovatif, konten artistik, dan solusi kreatif untuk pemasaran dan komunikasi MCC.', '14px', 'normal')"
+          onmouseout="resetText('textCreative', 'Creative', '1.5rem', '600')"
+        >
+          <p
+            id="textCreative"
+            class="py-8 px-5 text-2xl font-semibold text-center text-black"
+          >
+            Creative
+          </p>
+        </div>
+        <div
+          class="flex justify-center items-center bg-violet-100 rounded-[11px]"
+          onmouseover="changeText('textPr', 'Divisi yang bertujuan membangun dan memenjaga hubungan positif dengan masyarakat, media, dan pemangku kepentingan dengan tujuan untuk meningkatkan citra serta pemahaman tentang visi dan nilai MCC.', '14px', 'normal')"
+          onmouseout="resetText('textPr', 'Public Relation', '1.5rem', '600')"
+        >
+          <p
+            id="textPr"
+            class="py-8 px-5 text-2xl font-semibold text-center text-black"
+          >
+            Public Relation
+          </p>
+        </div>
+        <div
+          class="flex justify-center items-center bg-violet-100 rounded-[11px]"
+          onmouseover="changeText('textHr', 'Divisi yang bertanggung jawab mengelola sumber daya manusia, termasuk perekrutan, pengembangan karyawan, administrasi kepegawaian, kebijakan karyawan, dan menciptakan lingkungan kerja yang produktif dan berdaya saing.', '14px', 'normal')"
+          onmouseout="resetText('textHr', 'Human Resource', '1.5rem', '600')"
+        >
+          <p
+            id="textHr"
+            class="py-8 px-5 text-2xl font-semibold text-center text-black"
+          >
+            Human Resource
+          </p>
+        </div>
+      </div>
     </section>
-    <script src="./public/script/main.js"></script>
+    <script src="./src/script/main.js"></script>
   </body>
 </html>
