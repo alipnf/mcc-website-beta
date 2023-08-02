@@ -6,6 +6,21 @@ const programDiv = document.querySelector("#program");
 const creativeDiv = document.querySelector("#creative");
 const prDiv = document.querySelector("#pr");
 const hrDiv = document.querySelector("#hr");
+const tham = document.querySelector(".tham");
+const navmenu = document.querySelector("#navbar");
+const navLinks = document.querySelectorAll("#navbar a");
+
+tham.addEventListener("click", () => {
+  tham.classList.toggle("tham-active");
+  navmenu.classList.toggle("hidden");
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    tham.classList.remove("tham-active");
+    navmenu.classList.add("hidden");
+  });
+});
 
 btnProgram.addEventListener("click", () => {
   programDiv.classList.toggle("hidden");

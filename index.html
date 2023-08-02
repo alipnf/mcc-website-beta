@@ -22,11 +22,47 @@
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
   <body>
+    <nav class="container fixed z-10 sm:hidden">
+      <div class="flex flex-row justify-end p-3 bg-white md:hidden tems-center">
+        <div>
+          <div class="hover:opacity-100 tham-e-squeeze tham tham-w-6">
+            <div class="tham-box">
+              <div class="tham-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden bg-indigo-50 rounded-lg" id="navbar">
+        <ul class="flex flex-col gap-y-10 justify-center items-center py-3">
+          <li><a href="#" class="text-2xl font-medium text-black">Home</a></li>
+          <li><a href="#" class="text-2xl font-medium text-black">Event</a></li>
+          <li>
+            <a href="#devisi" class="text-2xl font-medium text-black"
+              >Structure</a
+            >
+          </li>
+        </ul>
+
+        <ul
+          class="mt-8 py-3 flex justify-center items-center rounded-b-lg bg-[#243665]"
+        >
+          <li>
+            <a href="#" class="text-2xl font-medium text-center text-white"
+              >Join us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="hidden sm:inline-block">
+      <h1>hello</h1>
+    </nav>
     <header
       class="flex relative justify-center bg-center bg-no-repeat bg-cover h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[650px] 2xl:h-[910px]"
       style="background-image: url('./public/bg-header.png')"
     >
-      <div class="container absolute top-6 flex-col">
+      <div class="container absolute top-6 flex-col mt-[39px]">
         <div class="flex justify-center">
           <img src="./public/Logo.svg" alt="logo" class="mt-8" />
         </div>
@@ -81,7 +117,7 @@
       </div>
     </section>
 
-    <section class="container mx-auto sm:-mt-[25%]">
+    <section class="container mx-auto sm:-mt-[25%]" id="devisi">
       <div class="flex flex-col mx-auto text-center pt-[77px]">
         <p class="text-xl font-semibold text-emerald-400 lg:text-2xl">Devisi</p>
         <h1 class="mt-2 text-2xl font-semibold text-black lg:text-4xl">
