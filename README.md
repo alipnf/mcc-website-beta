@@ -3,7 +3,8 @@
 website sederhana, masih tahap pengembangan
 
 design by [Rifki Indra Zakaria](https://github.com/Scarrotles)
-https://www.figma.com/file/lQhBmQaPk0Ma7GGshCB71x/MCC-WEB-DESIGN?type=design&mode=design&t=V4H012p1If1eSVH3-1
+
+- https://www.figma.com/file/lQhBmQaPk0Ma7GGshCB71x/MCC-WEB-DESIGN?type=design&mode=design&t=V4H012p1If1eSVH3-1
 
 ### Prerequisites
 
