@@ -10,6 +10,54 @@ const tham = document.querySelector(".tham");
 const navmenu = document.querySelector("#navbar");
 const navLinks = document.querySelectorAll("#navbar a");
 
+function sembunyikanSemuaDiv() {
+  programDiv.classList.add("hidden");
+  creativeDiv.classList.add("hidden");
+  prDiv.classList.add("hidden");
+  hrDiv.classList.add("hidden");
+}
+
+function toggleProgramDiv() {
+  if (programDiv.classList.contains("hidden")) {
+    sembunyikanSemuaDiv();
+    programDiv.classList.remove("hidden");
+  } else {
+    programDiv.classList.add("hidden");
+  }
+}
+
+function toggleCreativeDiv() {
+  if (creativeDiv.classList.contains("hidden")) {
+    sembunyikanSemuaDiv();
+    creativeDiv.classList.remove("hidden");
+  } else {
+    creativeDiv.classList.add("hidden");
+  }
+}
+
+function togglePrDiv() {
+  if (prDiv.classList.contains("hidden")) {
+    sembunyikanSemuaDiv();
+    prDiv.classList.remove("hidden");
+  } else {
+    prDiv.classList.add("hidden");
+  }
+}
+
+function toggleHrDiv() {
+  if (hrDiv.classList.contains("hidden")) {
+    sembunyikanSemuaDiv();
+    hrDiv.classList.remove("hidden");
+  } else {
+    hrDiv.classList.add("hidden");
+  }
+}
+
+btnProgram.addEventListener("click", toggleProgramDiv);
+btnCreative.addEventListener("click", toggleCreativeDiv);
+btnPr.addEventListener("click", togglePrDiv);
+btnHr.addEventListener("click", toggleHrDiv);
+
 tham.addEventListener("click", () => {
   tham.classList.toggle("tham-active");
   navmenu.classList.toggle("hidden");
@@ -20,19 +68,6 @@ navLinks.forEach((link) => {
     tham.classList.remove("tham-active");
     navmenu.classList.add("hidden");
   });
-});
-
-btnProgram.addEventListener("click", () => {
-  programDiv.classList.toggle("hidden");
-});
-btnCreative.addEventListener("click", () => {
-  creativeDiv.classList.toggle("hidden");
-});
-btnPr.addEventListener("click", () => {
-  prDiv.classList.toggle("hidden");
-});
-btnHr.addEventListener("click", () => {
-  hrDiv.classList.toggle("hidden");
 });
 
 function changeText(elementId, newText, fontSize, fontWeight) {
