@@ -70,6 +70,14 @@ navLinks.forEach((link) => {
   });
 });
 
+document.addEventListener("click", (event) => {
+  const target = event.target;
+  if (!navmenu.contains(target) && !tham.contains(target)) {
+    tham.classList.remove("tham-active");
+    navmenu.classList.add("hidden");
+  }
+});
+
 function changeText(elementId, newText, fontSize, fontWeight) {
   const textElement = document.getElementById(elementId);
   const originalText = textElement.innerText;
