@@ -22,6 +22,7 @@
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- nav mobile -->
     <nav class="container fixed z-10 sm:hidden">
       <div class="flex flex-row justify-end p-3 bg-white md:hidden tems-center">
         <div>
@@ -55,6 +56,7 @@
       </div>
     </nav>
 
+    <!-- nav desktop -->
     <nav class="hidden gap-10 justify-end items-center py-5 px-12 sm:flex">
       <a href="#" class="text-xl font-medium text-black">Home</a>
       <a href="#" class="text-xl font-medium text-black">Event</a>
@@ -65,6 +67,8 @@
         >JoinUs</a
       >
     </nav>
+
+    <!-- header -->
     <header
       class="flex relative justify-center bg-center bg-no-repeat bg-cover h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[650px] 2xl:h-[910px]"
       style="background-image: url('./public/bg-header.svg')"
@@ -101,6 +105,7 @@
       </div>
     </header>
 
+    <!-- tentang kami -->
     <section
       class="bg-center bg-no-repeat bg-cover md:mt-72 full mt-[164px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[750px] xl:h-[800px] 2xl:h-[1000px]"
       style="background-image: url('./public/bg-section.svg')"
@@ -124,6 +129,7 @@
       </div>
     </section>
 
+    <!-- devisi -->
     <section class="container mx-auto sm:-mt-[25%]" id="devisi">
       <div class="flex flex-col mx-auto text-center pt-[77px]">
         <p class="text-xl font-semibold text-emerald-400 lg:text-2xl">Devisi</p>
@@ -131,6 +137,8 @@
           MCC Memiliki 4 Divisi Kepengurusan
         </h1>
       </div>
+
+      <!-- card devisi mobile -->
       <div class="grid gap-5 mt-8 md:hidden">
         <div
           class="flex flex-col justify-center items-center mx-6 text-center bg-violet-100 cursor-pointer rounded-[10px]"
@@ -194,6 +202,7 @@
         </div>
       </div>
 
+      <!-- card devisi desktop -->
       <div
         class="hidden grid-cols-1 gap-5 mx-24 mt-8 cursor-pointer md:grid lg:grid-cols-2"
       >
@@ -248,6 +257,7 @@
       </div>
     </section>
 
+    <!-- kelas -->
     <section
       class="bg-center bg-no-repeat bg-cover md:mb-0 mb-[850px] full mt-[164px] h-[400px] sm:mb-[650px] sm:h-[500px] md:h-[600px] lg:h-[750px] xl:h-[800px] 2xl:h-[1000px]"
       style="background-image: url('./public/bg-section.svg')"
@@ -320,6 +330,7 @@
       </div>
     </section>
 
+    <!-- Showcase project -->
     <section class="container px-7 mx-auto mt-5">
       <div class="flex flex-col mx-auto">
         <p class="text-xl font-semibold text-emerald-400 lg:text-2xl">
@@ -329,13 +340,159 @@
           Project dan Karya MCC
         </h1>
       </div>
+    </section>
 
-      <div class="py-48 text-center sm:py-56 xl:py-64">
-        <p class="text-5xl font-semibold text-black text-opacity-5">SOON</p>
+    <!-- card Showcase mobile  -->
+    <div
+      class="container relative px-7 mx-auto w-full md:px-36 lg:hidden glide-05"
+    >
+      <!-- Slides -->
+      <div class="overflow-hidden" data-glide-el="track">
+        <ul
+          class="flex overflow-hidden relative p-0 mx-auto w-full whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]"
+        >
+          <li>
+            <div
+              class="flex flex-col gap-5 justify-center p-5 mt-7 w-10/12 bg-violet-100 sm:w-11/12 md:w-7/12 rounded-[11px]"
+            >
+              <img src="./public/card-showcase.png" alt="card-showcase" />
+              <h1 class="font-semibold text-black text-[32px]">
+                Work Together
+              </h1>
+              <p class="text-xl font-normal text-black">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt utet magna aliqua. Ut enim ad minim
+                veniam, ....
+              </p>
+              <a
+                href="#"
+                class="inline-block py-2 px-6 text-base font-medium text-center text-white rounded-[11px] bg-slate-700 hover:bg-slate-500"
+                >More</a
+              >
+            </div>
+          </li>
+          <li>
+            <div
+              class="flex flex-col gap-5 justify-center p-5 mt-7 w-10/12 bg-violet-100 sm:w-11/12 md:w-7/12 rounded-[11px]"
+            >
+              <img src="./public/card-showcase.png" alt="card-showcase" />
+              <h1 class="font-semibold text-black text-[32px]">
+                Work Together
+              </h1>
+              <p class="text-xl font-normal text-black">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt utet magna aliqua. Ut enim ad minim
+                veniam, ....
+              </p>
+              <a
+                href="#"
+                class="inline-block py-2 px-6 text-base font-medium text-center text-white rounded-[11px] bg-slate-700 hover:bg-slate-500"
+                >More</a
+              >
+            </div>
+          </li>
+          <li>
+            <div
+              class="flex flex-col gap-5 justify-center p-5 mt-7 w-10/12 bg-violet-100 sm:w-11/12 md:w-7/12 rounded-[11px]"
+            >
+              <img src="./public/card-showcase.png" alt="card-showcase" />
+              <h1 class="font-semibold text-black text-[32px]">
+                Work Together
+              </h1>
+              <p class="text-xl font-normal text-black">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt utet magna aliqua. Ut enim ad minim
+                veniam, ....
+              </p>
+              <a
+                href="#"
+                class="inline-block py-2 px-6 text-base font-medium text-center text-white rounded-[11px] bg-slate-700 hover:bg-slate-500"
+                >More</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Indicators -->
+      <div
+        class="flex gap-2 justify-center items-center mt-3 w-full md:pr-8"
+        data-glide-el="controls[nav]"
+      >
+        <button class="group" data-glide-dir="=0" aria-label="goto slide 1">
+          <span
+            class="block w-2.5 h-2.5 bg-violet-100 rounded-full transition-colors duration-300 focus:outline-none ring-slate-700"
+          ></span>
+        </button>
+        <button class="group" data-glide-dir="=1" aria-label="goto slide 2">
+          <span
+            class="block w-2.5 h-2.5 bg-violet-100 rounded-full transition-colors duration-300 focus:outline-none ring-slate-700"
+          ></span>
+        </button>
+        <button class="group" data-glide-dir="=2" aria-label="goto slide 3">
+          <span
+            class="block w-2.5 h-2.5 bg-violet-100 rounded-full transition-colors duration-300 focus:outline-none ring-slate-700"
+          ></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- card Showcase desktop -->
+    <section
+      class="container hidden grid-cols-3 gap-6 px-7 mx-auto mt-20 lg:grid"
+    >
+      <div
+        class="flex flex-col gap-5 justify-center p-5 bg-violet-100 rounded-[11px]"
+      >
+        <img src="./public/card-showcase.png" alt="card-showcase" />
+        <h1 class="font-semibold ext-black text-[32px]">Work Together</h1>
+        <p class="text-xl font-normal text-black">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt utet magna aliqua. Ut enim ad minim veniam,
+          ....
+        </p>
+        <a
+          href="#"
+          class="inline-block py-2 px-6 text-base font-medium text-center text-white rounded-[11px] bg-slate-700 hover:bg-slate-500"
+          >More</a
+        >
+      </div>
+      <div
+        class="flex flex-col gap-5 justify-center p-5 bg-violet-100 rounded-[11px]"
+      >
+        <img src="./public/card-showcase.png" alt="card-showcase" />
+        <h1 class="font-semibold ext-black text-[32px]">Work Together</h1>
+        <p class="text-xl font-normal text-black">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt utet magna aliqua. Ut enim ad minim veniam,
+          ....
+        </p>
+        <a
+          href="#"
+          class="inline-block py-2 px-6 text-base font-medium text-center text-white rounded-[11px] bg-slate-700 hover:bg-slate-500"
+          >More</a
+        >
+      </div>
+
+      <div
+        class="flex flex-col gap-5 justify-center p-5 bg-violet-100 rounded-[11px]"
+      >
+        <img src="./public/card-showcase.png" alt="card-showcase" />
+        <h1 class="font-semibold ext-black text-[32px]">Work Together</h1>
+        <p class="text-xl font-normal text-black">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt utet magna aliqua. Ut enim ad minim veniam,
+          ....
+        </p>
+        <a
+          href="#"
+          class="inline-block py-2 px-6 text-base font-medium text-center text-white rounded-[11px] bg-slate-700 hover:bg-slate-500"
+          >More</a
+        >
       </div>
     </section>
 
-    <footer class="bg-[#243665]">
+    <!-- footer -->
+    <footer class="mt-9 bg-[#243665]">
       <div class="container p-5 mx-auto lg:px-12 lg:pt-24">
         <div class="grid gap-12 mx-auto md:grid-cols-3">
           <div class="flex flex-col gap-5">
@@ -360,6 +517,22 @@
         </div>
       </div>
     </footer>
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
     <script src="./src/script/main.js"></script>
+    <script>
+      var glide05 = new Glide(".glide-05", {
+        type: "slider",
+        focusAt: "center",
+        perView: 1,
+        animationDuration: 700,
+        gap: 0,
+        classes: {
+          activeNav: "[&>*]:bg-indigo-400",
+        },
+      });
+      glide05.mount();
+    </script>
   </body>
 </html>
