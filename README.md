@@ -23,9 +23,9 @@ npm i
 
 ```sh
 # run in development
-npm dev
+npm run dev
 
 # build project
-npm build
+npm run build
 
 ```
