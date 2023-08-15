@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss ./src/style/global.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss build ./src/style/global.css -o ./dist/output.css"
+    "build": "npx tailwindcss build  -i ./src/style/global.css -o ./dist/output.css"
   },
   "keywords": [],
   "author": "",
